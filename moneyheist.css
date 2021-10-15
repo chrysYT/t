@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bodybg {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  filter: saturate(3);
+  background-repeat: no-repeat;
+}
+.background {
+  position: absolute;
+  height: 88%;
+  width: 77%;
+  background: black url("imgs/tokyo-money-heist-season-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1px;
+  box-shadow: 15px 15px 35px rgb(0, 0, 0);
+}
+.background::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.473);
+}
+
+.netflixhd {
+  position: absolute;
+  height: 60px;
+  top: 15px;
+  left: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.netflixlogo {
+  position: absolute;
+  height: 45px;
+  cursor: pointer;
+  left: 0;
+}
+.links {
+  position: absolute;
+  top: 35px;
+  left: 220px;
+}
+.links a {
+  margin: 8px;
+  color: white;
+  opacity: 0.6;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.links a:hover {
+  opacity: 1;
+}
+.searchbar {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
+}
+.searchbar input {
+  height: 20px;
+  width: 200px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.788);
+  opacity: 0.8;
+  color: white;
+}
+.searchbar input:hover {
+  opacity: 1;
+}
+.searchbar ion-icon {
+  position: absolute;
+  color: white;
+  left: 11.2pc;
+  border-left: 1px solid rgba(255, 255, 255, 0.856);
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.nseries {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  top: 150px;
+  left: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.netflixicon {
+  position: absolute;
+  height: 60px;
+  left: -39px;
+}
+span {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.63);
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  left: 33px;
+}
+.txtbox {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 500px;
+  top: 190px;
+  left: 30px;
+}
+.txtbox h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 117px;
+  font-weight: 100;
+  font-family: "Bebas Neue", cursive;
+}
+h5 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  width: 400px;
+  font-weight: 100;
+  position: absolute;
+  left: 4px;
+  bottom: 32px;
+  word-spacing: 2px;
+  opacity: 0.5;
+}
+.buttons {
+  position: absolute;
+  height: 70px;
+  width: 700px;
+  bottom: 130px;
+  left: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons .button1 {
+  position: absolute;
+  height: 40px;
+  width: 120px;
+  background: rgb(255, 0, 0);
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.button1 ion-icon {
+  font-size: 20px;
+  position: absolute;
+  left: 25px;
+  color: white;
+}
+.button1 h1 {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 100;
+  position: absolute;
+  right: 35px;
+  letter-spacing: 1px;
+}
+.buttons .button2 {
+  position: absolute;
+  height: 40px;
+  width: 120px;
+  background: rgba(8, 8, 8, 0.315);
+  left: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.button2 ion-icon {
+  color: white;
+  font-size: 20px;
+}
+.button2 h1 {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.trailer {
+  position: absolute;
+  width: 160px;
+  height: 48px;
+  bottom: 140px;
+  left: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.trailer:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.11);
+}
+.trailer ion-icon {
+  position: absolute;
+  color: white;
+  left: 4px;
+  font-size: 15px;
+  border: 1.5px solid;
+  padding: 7px;
+  border-radius: 50%;
+}
+.trailer span {
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  left: 45px;
+}
+.bottomlinks {
+  position: absolute;
+  bottom: 11px;
+  left: 30px;
+}
+.bottomlinks a {
+  margin: 15px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+.bottomlinks a:hover {
+  border-bottom: 2px solid red;
+}
